@@ -1,0 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.heading {
+  @apply text-red-600 text-8xl font-bold underline;
+}
