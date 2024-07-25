@@ -1,0 +1,32 @@
+[
+  {
+    "question": "Who was the first President of the United States?",
+    "options": [
+      "Thomas Jefferson",
+      "George Washington",
+      "Abraham Lincoln",
+      "John Adams"
+    ],
+    "correct_option": "George Washington"
+  },
+  {
+    "question": "What year did World War II end?",
+    "options": ["1942", "1945", "1946", "1950"],
+    "correct_option": "1945"
+  },
+  {
+    "question": "Who was known as the 'Iron Lady'?",
+    "options": [
+      "Margaret Thatcher",
+      "Angela Merkel",
+      "Indira Gandhi",
+      "Golda Meir"
+    ],
+    "correct_option": "Margaret Thatcher"
+  },
+  {
+    "question": "What ancient civilization built the Machu Picchu complex in Peru?",
+    "options": ["Aztec", "Maya", "Inca", "Olmec"],
+    "correct_option": "Inca"
+  }
+]
