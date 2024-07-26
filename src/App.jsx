@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 
 import StartQuiz from "./screens/start-quiz.jsx";
 import PlayQuiz from "./screens/play-quiz.jsx";
+import EndQuiz from "./screens/end-quiz.jsx";
 import { QuizProvider } from "./context/QuizContext.jsx";
 
 function App() {
@@ -10,6 +11,7 @@ function App() {
       <QuizProvider>
         <Router>
           <Routes>
+            <Route path="/end-quiz" element={<EndQuiz />} />
             <Route path="/play-quiz" element={<PlayQuiz />} />
             <Route path="/" element={<StartQuiz />} />
           </Routes>

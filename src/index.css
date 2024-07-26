@@ -8,7 +8,7 @@
 
 body {
   max-height: 100vh;
-  background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
+  background-image: linear-gradient(rgba(0, 0, 0, 0.1), rgba(0, 0, 0, 0.1)),
     url(/bg-2.jpg);
   background-position: center;
   background-size: cover;
@@ -31,4 +31,17 @@ body {
   .option {
     @apply bg-white w-96 flex justify-center items-center p-5 my-4 rounded-tl-option rounded-br-option text-2xl font-teko font-extrabold relative cursor-pointer hover:bg-custom-blue transition duration-300 hover:text-white focus:bg-custom-blue focus:text-white;
   }
+}
+
+.fade-in {
+  opacity: 0;
+  filter: blur(15px);
+  transform: translateX(100%);
+  transition: all 1s;
+}
+
+.fade-in.show-animation {
+  opacity: 1;
+  filter: blur(0);
+  transform: translateX(0);
 }

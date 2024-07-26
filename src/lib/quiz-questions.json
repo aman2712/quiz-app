@@ -1,5 +1,6 @@
 [
   {
+    "id": "A7B3C2D1E4F5",
     "question": "Who was the first President of the United States?",
     "options": [
       "Thomas Jefferson",
@@ -11,12 +12,14 @@
     "selected_answer": ""
   },
   {
+    "id": "X9Y8Z7W6V5U4",
     "question": "What year did World War II end?",
     "options": ["1942", "1945", "1946", "1950"],
     "correct_option": "1945",
     "selected_answer": ""
   },
   {
+    "id": "P1Q2R3S4T5U6",
     "question": "Who was known as the 'Iron Lady'?",
     "options": [
       "Margaret Thatcher",
@@ -28,6 +31,7 @@
     "selected_answer": ""
   },
   {
+    "id": "M9N8O7P6Q5R4",
     "question": "What ancient civilization built the Machu Picchu complex in Peru?",
     "options": ["Aztec", "Maya", "Inca", "Olmec"],
     "correct_option": "Inca",

@@ -1,4 +1,4 @@
-import { createContext, useEffect, useState } from "react";
+import { createContext, useState } from "react";
 import quizQuestions from "../lib/quiz-questions.json";
 
 export const QuizContext = createContext(null);
@@ -10,6 +10,7 @@ export const QuizProvider = ({ children }) => {
 
   const nextQuestion = () => {
     if (currentQuestion === 3) return;
+    if (questions[currentQuestion].selected_answer === "") return;
     setCurrentQuestion((prev) => prev + 1);
   };
 
@@ -21,20 +22,26 @@ export const QuizProvider = ({ children }) => {
   const changeSelectedAnswer = (answer) => {
     const question = questions[currentQuestion];
     question.selected_answer = answer;
-    setQuestions((prev) => [...prev, question]);
+    setQuestions(questions);
   };
 
-  useEffect(() => {
-    console.log(questions);
-  }, [questions]);
+  const submitQuiz = () => {
+    questions.forEach((question) => {
+      if (question.correct_option === question.selected_answer) {
+        setScore((prev) => prev + 10);
+      }
+    });
+  };
 
   const value = {
     questions,
     currentQuestion,
+    setCurrentQuestion,
     nextQuestion,
     prevQuestion,
     score,
     changeSelectedAnswer,
+    submitQuiz,
   };
   return <QuizContext.Provider value={value}>{children}</QuizContext.Provider>;
 };
