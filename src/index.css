@@ -12,6 +12,7 @@ body {
     url(/bg-2.jpg);
   background-position: center;
   background-size: cover;
+  overflow: hidden;
 }
 
 @layer components {

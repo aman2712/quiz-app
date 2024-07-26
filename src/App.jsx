@@ -6,7 +6,7 @@ import { QuizProvider } from "./context/QuizContext.jsx";
 
 function App() {
   return (
-    <main className="container font-work-sans">
+    <main className="font-work-sans">
       <QuizProvider>
         <Router>
           <Routes>

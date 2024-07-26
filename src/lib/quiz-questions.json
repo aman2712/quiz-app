@@ -7,12 +7,14 @@
       "Abraham Lincoln",
       "John Adams"
     ],
-    "correct_option": "George Washington"
+    "correct_option": "George Washington",
+    "selected_answer": ""
   },
   {
     "question": "What year did World War II end?",
     "options": ["1942", "1945", "1946", "1950"],
-    "correct_option": "1945"
+    "correct_option": "1945",
+    "selected_answer": ""
   },
   {
     "question": "Who was known as the 'Iron Lady'?",
@@ -22,11 +24,13 @@
       "Indira Gandhi",
       "Golda Meir"
     ],
-    "correct_option": "Margaret Thatcher"
+    "correct_option": "Margaret Thatcher",
+    "selected_answer": ""
   },
   {
     "question": "What ancient civilization built the Machu Picchu complex in Peru?",
     "options": ["Aztec", "Maya", "Inca", "Olmec"],
-    "correct_option": "Inca"
+    "correct_option": "Inca",
+    "selected_answer": ""
   }
 ]

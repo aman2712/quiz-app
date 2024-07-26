@@ -1,12 +1,13 @@
-import { useContext, useState } from "react";
+import { useContext } from "react";
 import { QuizContext } from "../context/QuizContext";
 import Question from "../components/question";
+import Progress from "../components/progress";
 
 const PlayQuiz = () => {
-  const [currentQuestion, setCurrentQuestion] = useState(0);
-  const { questions } = useContext(QuizContext);
+  const { questions, currentQuestion } = useContext(QuizContext);
   return (
     <div className="page">
+      <Progress />
       <Question question={questions[currentQuestion]} />
     </div>
   );
